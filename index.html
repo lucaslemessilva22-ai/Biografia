@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lucas | Biografia</title>
+
+    <meta name="description" content="Conheça a história de Lucas, 14 anos, de Rosário do Ivaí - PR.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #080b12;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            line-height: 1.7;
+        }
+
+        /* NAVEGAÇÃO */
+
+        header {
+            width: 100%;
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #0c1220;
+        }
+
+        .logo {
+            color: #6495ff;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #6495ff;
+        }
+
+        /* INÍCIO */
+
+        .inicio {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 10%;
+            background: linear-gradient(135deg, #080b12, #172b50);
+        }
+
+        .inicio span {
+            color: #6495ff;
+            letter-spacing: 4px;
+        }
+
+        .inicio h1 {
+            font-size: clamp(45px, 8vw, 85px);
+            margin: 15px 0;
+        }
+
+        .inicio h1 strong {
+            color: #6495ff;
+        }
+
+        .inicio p {
+            color: #b8c4d8;
+            font-size: 18px;
+        }
+
+        .botao {
+            display: inline-block;
+            width: fit-content;
+            margin-top: 30px;
+            padding: 13px 25px;
+            background: #477eff;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        /* SEÇÕES */
+
+        section:not(.inicio) {
+            padding: 90px 10%;
+        }
+
+        .titulo {
+            color: #6495ff;
+            font-size: 13px;
+            letter-spacing: 4px;
+        }
+
+        h2 {
+            font-size: 35px;
+            margin: 15px 0 25px;
+        }
+
+        .texto {
+            max-width: 850px;
+            color: #b8c4d8;
+            margin-bottom: 20px;
+        }
+
+        /* INFORMAÇÕES */
+
+        .informacoes {
+            background: #101827;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #19243a;
+            border: 1px solid #293957;
+            border-radius: 12px;
+            padding: 25px;
+            transition: .3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #6495ff;
+        }
+
+        .card h3 {
+            color: #6495ff;
+            margin-bottom: 10px;
+        }
+
+        /* FUTURO */
+
+        .futuro {
+            text-align: center;
+        }
+
+        .futuro p {
+            max-width: 650px;
+            margin: auto;
+            color: #b8c4d8;
+        }
+
+        /* RODAPÉ */
+
+        footer {
+            background: #05070c;
+            padding: 30px;
+            text-align: center;
+            color: #7d899f;
+            font-size: 13px;
+        }
+
+        /* CELULAR */
+
+        @media (max-width: 650px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+
+            .inicio {
+                min-height: 75vh;
+            }
+
+            section:not(.inicio) {
+                padding: 65px 7%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <header>
+        <div class="logo">Lucas.</div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#informacoes">Informações</a>
+        </nav>
+    </header>
+
+    <!-- APRESENTAÇÃO -->
+
+    <section class="inicio" id="inicio">
+
+        <span>MINHA BIOGRAFIA</span>
+
+        <h1>Olá, eu sou <strong>Lucas.</strong></h1>
+
+        <p>14 anos • Rosário do Ivaí - Paraná</p>
+
+        <a href="#sobre" class="botao">
+            Conheça minha história
+        </a>
+
+    </section>
+
+    <!-- SOBRE MIM -->
+
+    <section id="sobre">
+
+        <span class="titulo">QUEM SOU EU</span>
+
+        <h2>Minha história</h2>
+
+        <p class="texto">
+            Lucas, de 14 anos, é natural de Rosário do Ivaí,
+            no Paraná. Um jovem que está começando a construir
+            sua própria história, descobrindo o mundo,
+            aprendendo com cada experiência e formando sua identidade.
+        </p>
+
+        <p class="texto">
+            Ainda muito jovem, Lucas tem uma vida inteira pela frente,
+            cheia de possibilidades, sonhos e caminhos a percorrer.
+            Cada dia representa uma nova oportunidade de aprender,
+            amadurecer e descobrir aquilo que realmente deseja para
+            seu futuro.
+        </p>
+
+        <p class="texto">
+            Sua história está apenas começando. Novas experiências,
+            amizades, desafios e conquistas farão parte de sua caminhada.
+        </p>
+
+    </section>
+
+    <!-- INFORMAÇÕES PESSOAIS -->
+
+    <section class="informacoes" id="informacoes">
+
+        <span class="titulo">MINHA IDENTIDADE</span>
+
+        <h2>Informações pessoais</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Nome</h3>
+                <p>Lucas</p>
+            </div>
+
+            <div class="card">
+                <h3>Idade</h3>
+                <p>14 anos</p>
+            </div>
+
+            <div class="card">
+                <h3>Cidade</h3>
+                <p>Rosário do Ivaí - PR</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FUTURO -->
+
+    <section class="futuro">
+
+        <span class="titulo">MEU FUTURO</span>
+
+        <h2>Minha história continua...</h2>
+
+        <p>
+            Tenho muitos capítulos para escrever, sonhos para realizar
+            e experiências para viver. O futuro está apenas começando.
+            Essa é apenas uma pequena parte da minha história.
+        </p>
+
+    </section>
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <p>© 2026 Lucas. Todos os direitos reservados.</p>
+
+        <p>Minha história, minhas conquistas, meu futuro.</p>
+
+    </footer>
+
+</body>
+</html>
